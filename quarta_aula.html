@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulário</title>
+</head>
+<body>
+<form>
+
+<fieldset><legend>Formulário de cadastramento</legend>
+<label>Nome:</label>
+	<input name="Nome" type="text" required="required" id="Nome" placeholder="Nome completo" size="70"> <br> <br>
+	<label>senha:</label>
+	<input type="password" required="required" placeholder="1 a 8 caracteres" size="12" maxlength="8"> <br><br>
+	<label>E-mail: </label>
+	<input type="email" required="required" placeholder="seu e-mail" size="40"> <br><br>
+	<label>Data nascimento:</label> 
+	<input type="date"> <br><br>
+	<label>Celular:</label>
+	<input type="tel" required="required" placeholder="189" pattern="\d[7]-?\d[4]"> <br> <br>
+	<label>Sexo:</label> <br>
+	<input name="sx" type="radio">Masculino <br>
+	<input name="sx" type="radio">Feminino <br><br>
+	<label>Do que gosta?</label> <br>
+	<input type="checkbox">Estudar <br>
+	<input type="checkbox">Esportes <br>
+	<input type="checkbox">Filmes <br>
+	<input type="checkbox">Livros <br><br>
+	
+	
+	<label>UF:</label>
+	<input name="uf" list="estados" id="uf" type="text">	
+	<datalist id="estados">
+	<option value="SP">São Paulo</option>	
+	<option value="RJ">Rio de Janeiro</option>
+	<option value="MG">Minas Gerais</option>	
+	<option value="ES">Espirito Santo</option>	
+	</datalist> <br> <br>
+	<input type="submit" name="Cadastrar" formaction="confirmado.html"> 
+	<input type="reset" name="Cancelar"> 
+	
+</fieldset>	
+</form>	
+</body>
+</html>
